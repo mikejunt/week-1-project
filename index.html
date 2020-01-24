@@ -9,8 +9,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
-        .place1 {
+        .header-config {
             background-color: aqua;
+            height: 6vw;
+            line-height: 6vw;
+            font-size: 4vw;
+        }
+
+        .footer-config {
+            background-color: burlywood;
+            height: 9vw;
         }
 
         .place2 {
@@ -52,25 +60,31 @@
         .place5 {
             padding: 0;
         }
+
         .fix-row-spacing {
             margin-left: 0px !important;
             margin-right: 0px !important;
         }
+
         @media (max-width: 575.98px) {
-            .place6,.place7 {
+
+            .place6,
+            .place7 {
                 padding-left: 8px;
                 padding-right: 8px;
             }
-        } ;
+        }
+
+        ;
     </style>
 </head>
 
 <body>
-    <header class="text-center place1 container-fluid">HEADER TEXT FRIEND</header>
-    <nav class="nav place2">
-        <div class="nav-item place3 col-4">Link1</div>
-        <div class="nav-item place3 col-4">Link2</div>
-        <div class="nav-item place3 col-4">Link3</div>
+    <header class="text-center header-config container-fluid">HEADER TEXT FRIEND</header>
+    <nav class="nav">
+        <div class="nav-item col-4">Link1</div>
+        <div class="nav-item col-4">Link2</div>
+        <div class="nav-item col-4">Link3</div>
     </nav>
     <main class="place4">
         <div class="place5 row container-fluid fix-row-spacing">
@@ -95,9 +109,9 @@
                 <article class="place9 side-content col-12">SIDE CONTENT</article>
                 <article class="place9 side-content col-12">SIDE CONTENT</article>
             </aside>
-            <footer class="text-center place10 container-fluid">Almighty Footer</footer>
         </div>
     </main>
+    <footer class="text-center place10 container-fluid footer-config">Almighty Footer</footer>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
