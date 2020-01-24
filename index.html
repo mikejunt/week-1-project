@@ -8,9 +8,96 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .place1 {
+            background-color: aqua;
+        }
+
+        .place2 {
+            background-color: blueviolet;
+        }
+
+        .place3 {
+            background-color: darkkhaki;
+            min-height: 5vw;
+        }
+
+        .place4 {
+            background-color: darkred;
+        }
+
+        .place5 {
+            background-color: darkturquoise;
+        }
+
+        .place6 {
+            background-color: forestgreen;
+        }
+
+        .place7 {
+            background-color: fuchsia;
+        }
+
+        .place8 {
+            background-color: indigo;
+            color: white;
+            min-height: 15vw;
+        }
+
+        .place9 {
+            background-color: lightcoral;
+            min-height: 10vw;
+        }
+
+        .place5 {
+            padding: 0;
+        }
+        .fix-row-spacing {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+        @media (max-width: 575.98px) {
+            .place6,.place7 {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+        } ;
+    </style>
 </head>
 
 <body>
+    <header class="text-center place1 container-fluid">HEADER TEXT FRIEND</header>
+    <nav class="nav place2">
+        <div class="nav-item place3 col-4">Link1</div>
+        <div class="nav-item place3 col-4">Link2</div>
+        <div class="nav-item place3 col-4">Link3</div>
+    </nav>
+    <main class="place4">
+        <div class="place5 row container-fluid fix-row-spacing">
+            <section class="place6 col-8 col-md-9">
+                <div class="row fix-row-spacing">
+                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                </div>
+            </section>
+            <aside class="place7 col-4 col-md-3">
+                <article class="place9 side-content col-12">SIDE CONTENT</article>
+                <article class="place9 side-content col-12">SIDE CONTENT</article>
+                <article class="place9 side-content col-12">SIDE CONTENT</article>
+                <article class="place9 side-content col-12">SIDE CONTENT</article>
+                <article class="place9 side-content col-12">SIDE CONTENT</article>
+            </aside>
+            <footer class="text-center place10 container-fluid">Almighty Footer</footer>
+        </div>
+    </main>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
