@@ -34,17 +34,6 @@
             background-color: darkred;
         }
 
-        .place5 {
-            background-color: darkturquoise;
-        }
-
-        .place6 {
-            background-color: forestgreen;
-        }
-
-        .place7 {
-            background-color: fuchsia;
-        }
 
         .place8 {
             background-color: indigo;
@@ -57,8 +46,13 @@
             min-height: 10vw;
         }
 
-        .place5 {
+        .fix-padding {
             padding: 0;
+        }
+
+        .footer-img {
+            min-height: 75px !important;
+            min-width: 75px !important;
         }
 
         .fix-row-spacing {
@@ -68,11 +62,16 @@
 
         @media (min-width: 576px) and (max-width: 767.98px) {
 
-            .place6,
-            .place7 {
+            .main-content-container,
+            .side-content-container {
                 padding-left: 8px;
                 padding-right: 8px;
             }
+        }
+        @media (max-width: 441px) {
+                .nav {
+                    font-size: smaller;
+                }
         }
     </style>
 </head>
@@ -93,8 +92,8 @@
         </ul>
     </nav>
     <main class="place4">
-        <div class="place5 row container-fluid fix-row-spacing">
-            <section class="place6 col-12 col-sm-9">
+        <div class="fix-padding row container-fluid fix-row-spacing">
+            <section class="main-content-container col-12 col-sm-9">
                 <div class="row fix-row-spacing">
                     <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
                     <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
@@ -108,7 +107,7 @@
                     <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
                 </div>
             </section>
-            <aside class="place7 col-12 col-sm-3">
+            <aside class="side-content-container col-12 col-sm-3">
                 <article class="place9 side-content col-12">SIDE CONTENT</article>
                 <article class="place9 side-content col-12">SIDE CONTENT</article>
                 <article class="place9 side-content col-12">SIDE CONTENT</article>
@@ -117,11 +116,13 @@
             </aside>
         </div>
     </main>
-    <footer class="text-center place10 container-fluid footer-config row fix-row-spacing">
-        <div class="float-left footer-img col-2"><img src="https://picsum.photos/200" class="img.fluid"></div>
-        <div class="col-10">varius leo et mauris ornare, quis aliquet urna finibus. Vivamus id lectus ex. Donec nulla elit, commodo sit
+    <footer class="text-center place10 container-fluid footer-config row fix-row-spacing fix-padding">
+        <div class="inline-block footer-img col-3 col-sm-2"><img src="https://picsum.photos/id/866/200"
+                class="img-fluid footer-img"></div>
+        <div class="col-9 col-sm-10">varius leo et mauris ornare, quis aliquet urna finibus. Vivamus id lectus ex. Donec
+            nulla elit, commodo sit
             amet ultrices vitae, pharetra id dui. Vivamus interdum nibh et est feugiat cursus. Mauris et urna tellus.
-            Aenean nec sagittis magna. Donec dictum dapibus tortor tempor ullamcorper.</div>
+        </div>
     </footer>
 
 </body>
