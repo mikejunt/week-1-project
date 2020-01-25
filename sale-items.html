@@ -44,6 +44,7 @@
 
         .place7 {
             background-color: fuchsia;
+            width: 140px;
         }
 
         .place8 {
@@ -66,14 +67,14 @@
             margin-right: 0px !important;
         }
 
-        @media (min-width: 576px) and (max-width: 767.98px) {
+        @media (max-width:575.98px) {
 
-            .place6,
-            .place7 {
-                padding-left: 8px;
-                padding-right: 8px;
+            .side-menu,
+            .footer-config {
+                font-size: smaller;
             }
         }
+
     </style>
 </head>
 
@@ -94,38 +95,39 @@
     </nav>
     <main class="place4">
         <div class="place5 row container-fluid fix-row-spacing">
-            <aside class="place7 col-12 col-sm-3">
-                <div class="place9 side-content col-12">SIDE CONTENT</div>
-                <div class="place9 side-content col-12">SIDE CONTENT</div>
-                <div class="place9 side-content col-12">SIDE CONTENT</div>
-                <div class="place9 side-content col-12">SIDE CONTENT</div>
-                <div class="place9 side-content col-12">SIDE CONTENT</div>
-                <div class="place9 side-content col-12">SIDE CONTENT</div>
-                <div class="place9 side-content col-12">SIDE CONTENT</div>
-                <div class="place9 side-content col-12">SIDE CONTENT</div>
-                <div class="place9 side-content col-12">SIDE CONTENT</div>
-                <div class="place9 side-content col-12">SIDE CONTENT</div>
+            <aside class="place7">
+                <div class="row">
+                    <div class="place9 side-menu col-12"><a href="#game1">RPG Game 1</div></a>
+                    <div class="place9 side-menu col-12"><a href="#game2">Strategy Game 1</div></a>
+                    <div class="place9 side-menu col-12"><a href="#game3">Shooty Game 1</div></a>
+                    <div class="place9 side-menu col-12"><a href="#game4">RPG Game 2</div></a>
+                    <div class="place9 side-menu col-12"><a href="#game5">RPG Game 3</div></a>
+                    <div class="place9 side-menu col-12"><a href="#game6">Shooty Game 2</div></a>
+                    <div class="place9 side-menu col-12"><a href="#game7">Shooty Game 3</div></a>
+                    <div class="place9 side-menu col-12"><a href="#game8">Shooty Game 4</div></a>
+                    <div class="place9 side-menu col-12"><a href="#game9">Puzzle Game 1</div></a>
+                    <div class="place9 side-menu col-12"><a href="#game10">Adventure Game 1</div></a>
+                </div>
             </aside>
-            <section class="place6 col-12 col-sm-9">
+            <section class="place6 col-9 col-md-10">
                 <div class="row fix-row-spacing">
-                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
-                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
-                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
-                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
-                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
-                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
-                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
-                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
-                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
-                    <article class="place8 main-content col-12 col-md-6 col-xl-4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-lg-6" id="game1">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-lg-6" id="game2">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-lg-6" id="game3">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-lg-6" id="game4">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-lg-6" id="game5">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-lg-6" id="game6">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-lg-6" id="game7">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-lg-6" id="game8">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-lg-6" id="game9">CONTENT BOX</article>
+                    <article class="place8 main-content col-12 col-lg-6" id="game10">CONTENT BOX</article>
                 </div>
             </section>
         </div>
     </main>
     <footer class="text-center place10 container-fluid footer-config">Duis varius leo et mauris ornare, quis aliquet
         urna finibus. Vivamus id lectus ex. Donec nulla elit, commodo sit amet ultrices vitae, pharetra id dui. Vivamus
-        interdum nibh et est feugiat cursus. Mauris et urna tellus. Aenean nec sagittis magna. Donec dictum dapibus
-        tortor tempor ullamcorper.</footer>
+        interdum nibh et est feugiat cursus.</footer>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
