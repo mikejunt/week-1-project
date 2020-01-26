@@ -10,44 +10,53 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
         .header-config {
-            background-image: linear-gradient(to bottom, rgba(0,47,108,1), rgba(0,123,255,0.5));
+            background-image: linear-gradient(to bottom, rgba(0, 47, 108, 1), rgba(0, 123, 255, 0.5));
             height: 6vw;
             line-height: 6vw;
             font-size: 4vw;
-
-        }
-
-        .footer-config {
-            background-image:linear-gradient(to bottom right, rgb(77,20,140), rgb(153,153,153));
-            height: auto;
-            min-height: 100px;
+            margin-bottom: 8px;
         }
 
         .main-content {
             background-color: indigo;
-            color: white;
-            min-height: 15vw;
+            border: solid 4px white;
+        }
+
+        .main-border-fix {
+            border-top: solid 4px white;
+            border-bottom: solid 4px white;
         }
 
         .side-content {
             background-color: lightcoral;
             min-height: 10vw;
+            border: solid 4px white;
         }
 
-        .fix-padding {
-            padding: 0;
+        .footer-config {
+            background-image: linear-gradient(to bottom right, rgb(77, 20, 140), rgb(153, 153, 153));
+            height: auto;
+            min-height: 132px;
+        }
+
+
+        .footer-img-container {
+            max-width: 100px;
         }
 
         .footer-img-config {
             min-height: 60px !important;
-            min-width: 60px !important;
             position: absolute;
             top: 50%;
             transform: translate(0, -50%);
         }
 
-        .footer-img-container {
+        .footer-img-width {
             min-width: 60px !important;
+        }
+
+        .footer-info-text {
+            vertical-align: middle;
         }
 
         @media (min-width: 576px) and (max-width: 767.98px) {
@@ -79,7 +88,8 @@
 </head>
 
 <body>
-    <header class="text-center header-config container-fluid text-white" id="headertop">Welcome to Local Game Seller</header>
+    <header class="text-center header-config container-fluid text-white" id="headertop">Welcome to Local Game Seller
+    </header>
     <nav class="container-fluid">
         <ul class="nav nav-pills nav-justified">
             <li class="nav-item">
@@ -93,51 +103,61 @@
             </li>
         </ul>
     </nav>
-    <main class="placeholder-main">
-        <div class="fix-padding row container-fluid mx-0">
+    <main class="main-border-fix">
+        <div class="row container-fluid mx-0 p-0">
             <section class="main-content-container col-12 col-sm-9">
                 <div class="row mx-0">
-                    <article class="main-content col-12 col-md-6 col-xl-4">Lorem ipsum dolor sit amet, consectetur
+                    <article class="main-content text-white col-12 col-md-6 col-xl-4">Lorem ipsum dolor sit amet,
+                        consectetur
                         adipiscing elit. Phasellus ullamcorper ex quam, quis facilisis massa blandit at. In tincidunt
                         commodo sem eu cursus. Duis gravida velit enim, sed dapibus mauris commodo nec. Suspendisse
                         dapibus pharetra arcu at faucibus. Mauris ultrices est gravida mauris fringilla, ac dapibus
                         nulla pulvinar.</article>
-                    <article class="main-content col-12 col-md-6 col-xl-4">Cras dignissim sodales ex, id bibendum nisi.
+                    <article class="main-content text-white col-12 col-md-6 col-xl-4">Cras dignissim sodales ex, id
+                        bibendum nisi.
                         Praesent tempor massa a augue pharetra, eu congue nunc malesuada. Nam sed enim urna.</article>
-                    <article class="main-content col-12 col-md-6 col-xl-4">Etiam sit amet tincidunt leo. Proin faucibus
+                    <article class="main-content text-white col-12 col-md-6 col-xl-4">Etiam sit amet tincidunt leo.
+                        Proin faucibus
                         sapien a euismod vehicula. Vivamus pellentesque vitae purus at iaculis. Proin at leo
                         ullamcorper, efficitur enim ut, fringilla lectus. Ut pellentesque id est eu malesuada. Duis
                         felis felis, pulvinar in nulla elementum, sollicitudin molestie nisi. Nam leo ex, venenatis at
                         justo id, convallis tristique orci. In ultricies erat purus, ut cursus erat molestie in.
                     </article>
-                    <article class="main-content col-12 col-md-6 col-xl-4">Aenean bibendum mollis ex, et auctor justo
+                    <article class="main-content text-white col-12 col-md-6 col-xl-4">Aenean bibendum mollis ex, et
+                        auctor justo
                         faucibus eget. Duis et quam ut ligula facilisis vestibulum. Aliquam lectus diam, bibendum sed
                         ligula quis, euismod sollicitudin lectus. Cras id nulla in quam fermentum posuere.</article>
-                    <article class="main-content col-12 col-md-6 col-xl-4">In tristique dui neque, ullamcorper pulvinar
+                    <article class="main-content text-white col-12 col-md-6 col-xl-4">In tristique dui neque,
+                        ullamcorper pulvinar
                         quam consequat a. Vivamus accumsan eros quis gravida interdum. Quisque vestibulum augue sed
                         porta vulputate. Nunc gravida turpis nec arcu pellentesque cursus. In egestas diam ligula, in
                         mattis nisi pulvinar eget. Donec ac libero commodo, rutrum odio sed, tincidunt mauris. Aenean
                         rhoncus dolor ac odio pharetra, porttitor efficitur justo sollicitudin. Morbi sit amet massa et
                         mauris suscipit lacinia.</article>
-                    <article class="main-content col-12 col-md-6 col-xl-4">Fusce ullamcorper odio velit, id viverra
+                    <article class="main-content text-white col-12 col-md-6 col-xl-4">Fusce ullamcorper odio velit, id
+                        viverra
                         nulla semper sit amet. Cras quis pellentesque magna. Fusce eu nunc nunc. Maecenas in viverra
                         velit. Phasellus at augue nunc. Maecenas convallis eleifend enim, eu tincidunt justo condimentum
                         at. Nam luctus malesuada neque non dictum. Sed cursus nunc quis leo facilisis, sit amet
                         ultricies magna pellentesque.</article>
-                    <article class="main-content col-12 col-md-6 col-xl-4">In sed quam non mi consequat sollicitudin
+                    <article class="main-content text-white col-12 col-md-6 col-xl-4">In sed quam non mi consequat
+                        sollicitudin
                         ullamcorper nec ex. Nullam turpis dui, cursus vel convallis quis, pretium vel velit. Sed
                         commodo, leo quis consequat aliquam, erat dui pellentesque quam, vitae vulputate risus tortor
                         nec dui. Morbi a tempus est.</article>
-                    <article class="main-content col-12 col-md-6 col-xl-4">Phasellus efficitur faucibus nibh, sit amet
+                    <article class="main-content text-white col-12 col-md-6 col-xl-4">Phasellus efficitur faucibus nibh,
+                        sit amet
                         venenatis mauris porta sed. Etiam vitae iaculis nunc, ut tempus justo. Praesent vel ultricies
                         nibh, sit amet fermentum ex. Suspendisse in leo eget justo pulvinar molestie ac vitae quam.
                         Fusce efficitur interdum augue, in condimentum neque scelerisque nec. Ut viverra nibh risus, et
                         consectetur erat dapibus sed.</article>
-                    <article class="main-content col-12 col-md-6 col-xl-4">Nunc commodo leo vel ultricies pharetra. In
+                    <article class="main-content text-white col-12 col-md-6 col-xl-4">Nunc commodo leo vel ultricies
+                        pharetra. In
                         arcu lectus, pharetra quis ligula nec, vehicula accumsan erat. Sed venenatis feugiat tempor.
                         Phasellus ultrices enim turpis, aliquet consectetur eros volutpat id. Mauris suscipit malesuada
                         facilisis. Pellentesque id leo blandit elit tristique pretium.</article>
-                    <article class="main-content col-12 col-md-6 col-xl-4">Nulla at justo dignissim, blandit enim at,
+                    <article class="main-content text-white col-12 col-md-6 col-xl-4">Nulla at justo dignissim, blandit
+                        enim at,
                         dapibus magna. Proin eu consequat ligula. Maecenas ornare accumsan volutpat. Nullam vitae
                         commodo enim. Nam bibendum nisl magna, et tempor purus venenatis sit amet. Phasellus lorem
                         velit, bibendum et dolor sed, cursus viverra ligula. Proin congue molestie tortor, eget molestie
@@ -146,18 +166,19 @@
                 </div>
             </section>
             <aside class="side-content-container col-12 col-sm-3">
-                <article class="side-content col-12">SIDE CONTENT</article>
-                <article class="side-content col-12">SIDE CONTENT</article>
-                <article class="side-content col-12">SIDE CONTENT</article>
-                <article class="side-content col-12">SIDE CONTENT</article>
-                <article class="side-content col-12">SIDE CONTENT</article>
+                <article class="side-content text-white col-12">SIDE CONTENT</article>
+                <article class="side-content text-white col-12">SIDE CONTENT</article>
+                <article class="side-content text-white col-12">SIDE CONTENT</article>
+                <article class="side-content text-white col-12">SIDE CONTENT</article>
+                <article class="side-content text-white col-12">SIDE CONTENT</article>
             </aside>
         </div>
     </main>
     <footer class="container-fluid footer-config row mx-0">
         <div class="inline-block footer-img-container col-2 p-0"><img src="https://picsum.photos/id/866/100"
-                class="img-fluid footer-img-config py-2 py-md-3"></div>
-        <div class="col-10 text-center footer-info-text text-white pr-0">varius leo et mauris ornare, quis aliquet urna finibus.
+                class="img-fluid footer-img-config py-2 py-md-3 footer-img-width"></div>
+        <div class="col-10 text-center footer-info-text text-white pr-0">varius leo et mauris ornare, quis aliquet urna
+            finibus.
             Vivamus id
             lectus ex.
             Donec nulla elit, commodo sit amet ultrices vitae, pharetra id dui. Vivamus interdum nibh et est feugiat
