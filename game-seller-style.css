@@ -65,15 +65,18 @@ body {
     top: 50%;
     transform: translate(0, -50%);
 }
+.sale-menu-item {
+    background-color:rgba(0, 123, 255, 1);
+    color: white;
+    height: 36px;
+}
 
 .sale-menu-container {
     height: 400px;
     width: 111px;
-    background-color:rgba(0, 123, 255, 1);
-    color: white;
     position: sticky;
     position: -webkit-sticky;
-    top: 85px;
+    top: calc(50% - 200px);
 }
 .sale-menu-link:link {
     color: white;
