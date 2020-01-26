@@ -76,7 +76,7 @@ body {
     width: 111px;
     position: sticky;
     position: -webkit-sticky;
-    top: calc(50% - 200px);
+    top: 85px;
 }
 .sale-menu-link:link {
     color: white;
