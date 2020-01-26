@@ -13,19 +13,38 @@
         .sale-menu-container {
             height: 400px;
             width: 111px;
-            background-color: salmon;
+            background-color:rgba(0, 123, 255, 1);
+            color: white;
             position: sticky;
             position: -webkit-sticky;
             top: 85px;
         }
-
+        .sale-menu-link:link {
+            color: white;
+        }
+        .sale-menu-link:visited {
+            color:whitesmoke;
+        }
         .sale-item-container {
             width: calc(100% - 111px);
         }
 
-        .sale-item {
+        .sale-image {
+            height: 80px;
+            width: 80px;
+            max-width: 80px;
+        }
 
-            min-height: 45vw;
+        .return-link-container {
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+        }
+
+        .sale-image:hover {
+            height: 120px;
+            width: 120px;
+            max-width: 120px;
         }
 
         .return-link {
@@ -40,11 +59,59 @@
             color: yellow;
         }
 
+        @media (min-width: 576px) {
+            .sale-image {
+                height: 90px;
+                width: 90px;
+                max-width: 90px;
+            }
+
+            .sale-image:hover {
+                height: 135px;
+                width: 135px;
+                max-width: 135px;
+            }
+        }
+
         @media (min-width: 767px) {
             .sale-image {
-                height: 120px !important;
-                width: 120px !important;
-                max-width: 120px !important;
+                height: 140px;
+                width: 140px;
+                max-width: 140px;
+            }
+
+            .sale-image:hover {
+                height: 200px;
+                width: 200px;
+                max-width: 200px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .sale-image {
+                height: 90px;
+                width: 90px;
+                max-width: 90px;
+            }
+
+            .sale-image:hover {
+                height: 135px;
+                width: 135px;
+                max-width: 135px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .sale-image {
+                height: 100px;
+                width: 100px;
+                max-width: 100px;
+            }
+
+            .sale-image:hover {
+                height: 150px;
+                width: 150px;
+                max-width: 150px;
             }
         }
     </style>
@@ -69,75 +136,107 @@
     <main class="main-border-fix">
         <div class="inline-block row container-fluid mx-0 p-0">
             <aside class="sale-menu-container px-3 pt-2 pb-1 rounded">
-                <p><a href="#link1">First Game</a></p>
-                <p><a href="#link2">Next Game</a></p>
-                <p><a href="#link3">Next Game</a></p>
-                <p><a href="#link4">Next Game</a></p>
-                <p><a href="#link5">Next Game</a></p>
-                <p><a href="#link6">Next Game</a></p>
-                <p><a href="#link7">Next Game</a></p>
-                <p><a href="#link8">Next Game</a></p>
-                <p><a href="#link9">Next Game</a></p>
-                <p><a href="#link0">Last Game</a></p>
+                <p><a class="sale-menu-link" href="#link1">First Game</a></p>
+                <p><a class="sale-menu-link" href="#link2">Next Game</a></p>
+                <p><a class="sale-menu-link" href="#link3">Next Game</a></p>
+                <p><a class="sale-menu-link" href="#link4">Next Game</a></p>
+                <p><a class="sale-menu-link" href="#link5">Next Game</a></p>
+                <p><a class="sale-menu-link" href="#link6">Next Game</a></p>
+                <p><a class="sale-menu-link" href="#link7">Next Game</a></p>
+                <p><a class="sale-menu-link" href="#link8">Next Game</a></p>
+                <p><a class="sale-menu-link" href="#link9">Next Game</a></p>
+                <p><a class="sale-menu-link" href="#link0">Last Game</a></p>
             </aside>
             <section class="sale-item-container row mx-0">
-                <div class="row mx-0 sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link1">
-                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/555/120"
-                            class="sale-image minimum-image-size inline-block img-fluid"></div>
-                    <div class="sale-item-text text-white inline-block col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat
-                        orci felis, vitae blandit diam tempus eget. Fusce nec dui quam. Proin mollis vehicula urna ut
-                        mollis. Nunc pretium vulputate nunc non scelerisque. Integer condimentum nunc id felis dapibus
-                        iaculis. Duis cursus convallis interdum. Fusce aliquam vehicula mi, id efficitur ante interdum
-                        non. Integer sed vehicula ante, sit amet gravida urna. Duis aliquet augue vel mattis blandit.
-                    </div><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item text-white main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border"
+                    id="link2">
+                    <img src="https://picsum.photos/id/910/200" class="sale-image float-left pr-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat orci felis, vitae
+                        blandit diam tempus eget. Fusce nec dui quam. Proin mollis vehicula urna ut mollis. Nunc pretium
+                        vulputate nunc non scelerisque. Integer condimentum nunc id felis dapibus iaculis. Duis cursus
+                        convallis interdum. Fusce aliquam vehicula mi, id efficitur ante interdum non. Integer sed
+                        vehicula ante, sit amet gravida urna. Duis aliquet augue vel mattis blandit.</p>
+                    <div class="return-link-container"><a href="#headertop" class="return-link">Top</a></div>
                 </div>
-                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link2">
-                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/355/120"
-                            class="sale-image minimum-image-size inline-block img-fluid"></div>
-                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item text-white main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border"
+                    id="link2">
+                    <img src="https://picsum.photos/id/234/200" class="sale-image float-left pr-2">
+                    <p>Nunc justo lorem, pharetra et aliquam quis, porttitor vitae ex. Aenean sed tristique metus. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="return-link-container"><a href="#headertop" class="return-link">Top</a></div>
                 </div>
-                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link3">
-                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/567/120"
-                            class="sale-image minimum-image-size inline-block img-fluid"></div>
-                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item text-white main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border"
+                    id="link3">
+                    <img src="https://picsum.photos/id/472/200" class="sale-image float-left pr-2">
+                    <p>Quisque malesuada arcu ac ante finibus, at feugiat eros condimentum. Vestibulum at justo in purus
+                        maximus condimentum id vel nisi. Fusce ornare condimentum consequat. Vivamus vestibulum finibus
+                        nisl nec eleifend. Phasellus efficitur diam sed ligula mattis auctor. Morbi aliquam lacus ac leo
+                        venenatis pharetra. Phasellus rhoncus finibus dolor, a tempus tortor lobortis sed. Maecenas
+                        condimentum magna felis, eget cursus dui dictum fringilla.</p>
+                    <div class="return-link-container"><a href="#headertop" class="return-link">Top</a></div>
                 </div>
-                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link4">
-                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/765/120"
-                            class="sale-image minimum-image-size inline-block img-fluid">
-                    </div>
-                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item text-white main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border"
+                    id="link4">
+                    <img src="https://picsum.photos/id/513/200" class="sale-image float-left pr-2">
+                    <p>Aliquam dignissim sed ante condimentum bibendum. Nulla dolor magna, pretium a condimentum
+                        egestas, dapibus eget turpis. Pellentesque blandit et urna eget bibendum. Integer gravida
+                        accumsan volutpat. Proin facilisis porttitor est, at aliquam arcu lobortis eu.</p>
+                    <div class="return-link-container"><a href="#headertop" class="return-link">Top</a></div>
                 </div>
-                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link5">
-                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/123/120"
-                            class="sale-image minimum-image-size inline-block img-fluid">
-                    </div>
-                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item text-white main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border"
+                    id="link5">
+                    <img src="https://picsum.photos/id/643/200" class="sale-image float-left pr-2">
+                    <p>Donec tempor tincidunt porttitor. Curabitur dignissim, massa non tempor tincidunt, felis ante
+                        scelerisque odio, a facilisis nisl enim in eros. Etiam euismod fermentum ipsum, ac porta odio
+                        ultricies ac. Sed dapibus ornare purus, eget fringilla purus imperdiet sed. Sed diam erat,
+                        commodo
+                        sit amet semper sit amet, luctus a risus.</p>
+                    <div class="return-link-container"><a href="#headertop" class="return-link">Top</a></div>
                 </div>
-                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link6">
-                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/234/120"
-                            class="sale-image minimum-image-size inline-block img-fluid">
-                    </div>
-                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item text-white main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border"
+                    id="link6">
+                    <img src="https://picsum.photos/id/243/200" class="sale-image float-left pr-2">
+                    <p>Donec tempor tincidunt porttitor. Curabitur dignissim, massa non tempor tincidunt, felis ante
+                        scelerisque odio, a facilisis nisl enim in eros. Etiam euismod fermentum ipsum, ac porta odio
+                        ultricies ac. Sed dapibus ornare purus, eget fringilla purus imperdiet sed. Sed diam erat,
+                        commodo
+                        sit amet semper sit amet, luctus a risus.</p>
+                    <div class="return-link-container"><a href="#headertop" class="return-link">Top</a></div>
                 </div>
-                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link7">
-                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/786/120"
-                            class="sale-image minimum-image-size inline-block img-fluid"></div>
-                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item text-white main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border"
+                    id="link7">
+                    <img src="https://picsum.photos/id/823/200" class="sale-image float-left pr-2">
+                    <p>Fusce tincidunt, neque a imperdiet tincidunt, est dui maximus eros, a sollicitudin risus dolor ut
+                        nibh. Quisque molestie sodales enim ultricies semper. Integer at scelerisque elit. Mauris
+                        commodo quis lectus ut iaculis. Pellentesque at justo eu nibh rhoncus aliquam. Nulla non sodales
+                        diam, eget pretium nisi.</p>
+                    <div class="return-link-container"><a href="#headertop" class="return-link">Top</a></div>
                 </div>
-                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link8">
-                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/486/120"
-                            class="sale-image minimum-image-size inline-block img-fluid"></div>
-                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item text-white main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border"
+                    id="link8">
+                    <img src="https://picsum.photos/id/111/200" class="sale-image float-left pr-2">
+                    <p>Mauris ornare nulla arcu, vitae hendrerit tortor tempor id. Proin et mattis nibh. Vestibulum et
+                        egestas tortor, nec maximus arcu. Proin pulvinar, quam non euismod placerat, sapien dolor
+                        viverra mauris, ac ultrices metus nisl eu mi.</p>
+                    <div class="return-link-container"><a href="#headertop" class="return-link">Top</a></div>
                 </div>
-                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link9">
-                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/342/120"
-                            class="sale-image minimum-image-size inline-block img-fluid"></div>
-                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item text-white main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border"
+                    id="link9">
+                    <img src="https://picsum.photos/id/732/200" class="sale-image float-left pr-2">
+                    <p>Ut eu malesuada erat. Nam molestie, tortor vel egestas malesuada, nunc sapien dignissim purus, eu
+                        pulvinar purus sem quis nisl. Maecenas tincidunt velit ullamcorper tortor facilisis condimentum.
+                        Aliquam rutrum non ligula tincidunt aliquam.</p>
+                    <div class="return-link-container"><a href="#headertop" class="return-link">Top</a></div>
                 </div>
-                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link0">
-                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/555/120"
-                            class="sale-image minimum-image-size inline-block img-fluid"></div>
-                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border text-white"
+                    id="link0">
+                    <img src="https://picsum.photos/id/555/200" class="sale-image float-left pr-2">
+                    <p>Donec tempor tincidunt porttitor. Curabitur dignissim, massa non tempor tincidunt, felis ante
+                        scelerisque odio, a facilisis nisl enim in eros. Etiam euismod fermentum ipsum, ac porta odio
+                        ultricies ac. Sed dapibus ornare purus, eget fringilla purus imperdiet sed. Sed diam erat,
+                        commodo
+                        sit amet semper sit amet, luctus a risus.</p>
+                    <div class="return-link-container"><a href="#headertop" class="return-link">Top</a></div>
                 </div>
             </section>
         </div>
