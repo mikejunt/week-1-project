@@ -46,14 +46,14 @@ body {
 }
 
 .footer-img-config {
-    min-height: 60px !important;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
 }
 
-.footer-img-width {
+.minimum-image-size {
     min-width: 60px !important;
+    min-height: 60px !important;
 }
 
 .footer-info-text {

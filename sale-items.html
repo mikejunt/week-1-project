@@ -19,13 +19,33 @@
             top: 85px;
         }
 
-        .place-size {
+        .sale-item-container {
             width: calc(100% - 111px);
         }
 
         .sale-item {
-            background-color: seagreen;
+
             min-height: 45vw;
+        }
+
+        .return-link {
+            color: white;
+            justify-content: right;
+        }
+
+        .return-link:hover {
+            color: lawngreen;
+        }
+
+        .return-link:active {
+            color: yellow;
+        }
+        @media (min-width: 767px) {
+            .sale-image {
+                height: 120px !important;
+                width: 120px !important;
+                max-width: 120px !important;
+            }
         }
     </style>
 </head>
@@ -60,53 +80,66 @@
                 <p><a href="#link9">Next Game</a></p>
                 <p><a href="#link0">Last Game</a></p>
             </aside>
-            <section class="place-size row mx-0">
-                <div class="sale-item py-1 px-2 px-md-3 col-12 col-lg-6 content-border" id="link1"><img
-                        src="https://picsum.photos/id/555/120" class="sale-image">
-                    <p class="sale-item-text"></p><a href="#headertop" class="return-link">Top</a>
+            <section class="sale-item-container row mx-0">
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link1">
+                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/555/120"
+                            class="sale-image minimum-image-size inline-block img-fluid"></div>
+                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
                 </div>
-                <div class="sale-item py-1 px-2 px-md-3 col-12 col-lg-6 content-border" id="link2"><img
-                        src="https://picsum.photos/id/355/120" class="sale-image">
-                    <p class="sale-item-text"></p><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link2">
+                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/355/120"
+                            class="sale-image minimum-image-size inline-block img-fluid"></div>
+                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
                 </div>
-                <div class="sale-item py-1 px-2 px-md-3 col-12 col-lg-6 content-border" id="link3"><img
-                        src="https://picsum.photos/id/567/120" class="sale-image">
-                    <p class="sale-item-text"></p><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link3">
+                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/567/120"
+                            class="sale-image minimum-image-size inline-block img-fluid"></div>
+                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
                 </div>
-                <div class="sale-item py-1 px-2 px-md-3 col-12 col-lg-6 content-border" id="link4"><img
-                        src="https://picsum.photos/id/765/120" class="sale-image">
-                    <p class="sale-item-text"></p><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link4">
+                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/765/120"
+                            class="sale-image minimum-image-size inline-block img-fluid">
+                    </div>
+                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
                 </div>
-                <div class="sale-item py-1 px-2 px-md-3 col-12 col-lg-6 content-border" id="link5"><img
-                        src="https://picsum.photos/id/123/120" class="sale-image">
-                    <p class="sale-item-text"></p><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link5">
+                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/123/120"
+                            class="sale-image minimum-image-size inline-block img-fluid">
+                    </div>
+                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
                 </div>
-                <div class="sale-item py-1 px-2 px-md-3 col-12 col-lg-6 content-border" id="link6"><img
-                        src="https://picsum.photos/id/234/120" class="sale-image">
-                    <p class="sale-item-text"></p><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link6">
+                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/234/120"
+                            class="sale-image minimum-image-size inline-block img-fluid">
+                    </div>
+                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
                 </div>
-                <div class="sale-item py-1 px-2 px-md-3 col-12 col-lg-6 content-border" id="link7"><img
-                        src="https://picsum.photos/id/786/120" class="sale-image">
-                    <p class="sale-item-text"></p><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link7">
+                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/786/120"
+                            class="sale-image minimum-image-size inline-block img-fluid"></div>
+                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
                 </div>
-                <div class="sale-item py-1 px-2 px-md-3 col-12 col-lg-6 content-border" id="link8"><img
-                        src="https://picsum.photos/id/486/120" class="sale-image">
-                    <p class="sale-item-text"></p><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link8">
+                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/486/120"
+                            class="sale-image minimum-image-size inline-block img-fluid"></div>
+                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
                 </div>
-                <div class="sale-item py-1 px-2 px-md-3 col-12 col-lg-6 content-border" id="link9"><img
-                        src="https://picsum.photos/id/342/120" class="sale-image">
-                    <p class="sale-item-text"></p><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link9">
+                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/342/120"
+                            class="sale-image minimum-image-size inline-block img-fluid"></div>
+                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
                 </div>
-                <div class="sale-item py-1 px-2 px-md-3 col-12 col-lg-6 content-border" id="link0"><img
-                        src="https://picsum.photos/id/555/120" class="sale-image">
-                    <p class="sale-item-text"></p><a href="#headertop" class="return-link">Top</a>
+                <div class="sale-item main-content py-2 px-2 px-md-3 py-md-3 col-12 col-lg-6 content-border" id="link0">
+                    <div class="sale-image-container p-0 col-2"><img src="https://picsum.photos/id/555/120"
+                            class="sale-image minimum-image-size inline-block img-fluid"></div>
+                    <div class="sale-item-text">Test text</div><a href="#headertop" class="return-link">Top</a>
                 </div>
             </section>
         </div>
     </main>
     <footer class="container-fluid footer-config row mx-0">
         <div class="inline-block footer-img-container col-2 p-0"><img src="https://picsum.photos/id/866/100"
-                class="img-fluid footer-img-config py-2 py-md-3 footer-img-width"></div>
+                class="img-fluid footer-img-config py-2 py-md-3 minimum-image-size"></div>
         <div class="col-10 text-center text-white pr-0">
             <p class="footer-info-text mb-0 px-3">Varius leo et mauris ornare, quis aliquet urna
                 finibus.
