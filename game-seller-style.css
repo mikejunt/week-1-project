@@ -63,6 +63,111 @@ body {
     transform: translate(0, -50%);
 }
 
+.sale-menu-container {
+    height: 400px;
+    width: 111px;
+    background-color:rgba(0, 123, 255, 1);
+    color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 85px;
+}
+.sale-menu-link:link {
+    color: white;
+}
+.sale-menu-link:visited {
+    color:whitesmoke;
+}
+.sale-item-container {
+    width: calc(100% - 111px);
+}
+
+.sale-image {
+    height: 80px;
+    width: 80px;
+    max-width: 80px;
+}
+
+.return-link-container {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.sale-image:hover {
+    height: 120px;
+    width: 120px;
+    max-width: 120px;
+}
+
+.return-link {
+    color: white;
+}
+
+.return-link:hover {
+    color: lawngreen;
+}
+
+.return-link:active {
+    color: yellow;
+}
+
+@media (min-width: 576px) {
+    .sale-image {
+        height: 90px;
+        width: 90px;
+        max-width: 90px;
+    }
+
+    .sale-image:hover {
+        height: 135px;
+        width: 135px;
+        max-width: 135px;
+    }
+}
+
+@media (min-width: 767px) {
+    .sale-image {
+        height: 140px;
+        width: 140px;
+        max-width: 140px;
+    }
+
+    .sale-image:hover {
+        height: 200px;
+        width: 200px;
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sale-image {
+        height: 90px;
+        width: 90px;
+        max-width: 90px;
+    }
+
+    .sale-image:hover {
+        height: 135px;
+        width: 135px;
+        max-width: 135px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sale-image {
+        height: 100px;
+        width: 100px;
+        max-width: 100px;
+    }
+
+    .sale-image:hover {
+        height: 150px;
+        width: 150px;
+        max-width: 150px;
+    }
+}
+
 @media (max-width: 767.98px) {
 
     .main-content-container,
