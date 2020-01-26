@@ -10,8 +10,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="game-seller-style.css" type="text/css">
     <style>
-        .place-height {
-            height: 300vw;
+        .short-field {
+            max-width: 400px !important;
         }
     </style>
 </head>
@@ -34,11 +34,11 @@
     </nav>
     <main class="px-3 pb-4">
         <form>
-            <div class="form-group"><label for="submitter-name">Your Name</label><input type="text" class="form-control"
+            <div class="form-group short-field"><label for="submitter-name">Your Name</label><input type="text" class="form-control"
                     id="submitter-name" placeholder="Name"></div>
-            <div class="form-group"><label for="submitter-email">Email Address</label><input type="email"
+            <div class="form-group short-field"><label for="submitter-email">Email Address</label><input type="email"
                     class="form-control" id="submitter-email" placeholder="Email address"></div>
-            <div class="form-group"><label for="submitter-phone">Phone Number</label><input type="text"
+            <div class="form-group short-field"><label for="submitter-phone">Phone Number</label><input type="text"
                     class="form-control" id="submitter-phone" placeholder="402-555-1234"></div>
             <p class="mb-2">Preferred Contact Method</p>
             <div class="form-check form-check-inline"><input class="form-check-input" type="radio"
@@ -51,7 +51,7 @@
                     name="contact-preference" id="contact-by-phone" value="contact-via-text"><label
                     class="form-check-label" for="contact-preference">Text</label></div>
             <p class="my-2">I have a:</p>
-            <select class="form-control">
+            <select class="form-control short-field">
                 <option>Suggestion</option>
                 <option>Question</option>
                 <option>Complaint</option>
