@@ -17,7 +17,6 @@ body {
 
 .main-content {
     background-image: radial-gradient(rgba(0, 123, 255, 1), rgba(0, 47, 108, 0.8));
-    border: solid 4px rgb(200,200,200);
 }
 
 .main-content:hover {
@@ -31,6 +30,8 @@ body {
 
 .side-content {
     background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(77, 20, 140, 1), rgba(0, 0, 0, 1));
+}
+.content-border {
     border: solid 4px rgb(200,200,200);
 }
 
@@ -81,7 +82,7 @@ body {
     }
 
     .header-config {
-        font-size: 17.5px;
+        font-size: 1.1rem;
         min-height: 30px;
         line-height: 30px;
     }
