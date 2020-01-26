@@ -14,10 +14,14 @@
             height: 400px;
             width: 111px;
             background-color: salmon;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 85px;
         }
 
         .place-size {
-            height: 175vw;
+            height: 475vw;
+            width: calc(100% - 111px);
         }
     </style>
 </head>
@@ -39,8 +43,8 @@
         </ul>
     </nav>
     <main class="main-border-fix">
-        <div class="inline-block row container-fluid mx-0 p-0 place-size">
-                <aside class="sale-menu-container px-3 pt-2 pb-1">
+        <div class="inline-block row container-fluid mx-0 p-0">
+                <aside class="sale-menu-container px-3 pt-2 pb-1 rounded">
                     <p><a href="#link1">First Game</a></p>
                     <p><a href="#link2">Next Game</a></p>
                     <p><a href="#link3">Next Game</a></p>
@@ -52,6 +56,7 @@
                     <p><a href="#link9">Next Game</a></p>
                     <p><a href="#link10">Next Game</a></p>
                 </aside>
+                <section class="place-size"></section>
         </div>
     </main>
     <footer class="container-fluid footer-config row mx-0">
