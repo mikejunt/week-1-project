@@ -106,10 +106,7 @@ body {
     max-width: 120px;
 }
 
-.return-link:link {
-    color: white;
-}
-.return-link:visited {
+.return-link:link,.return-link:visited  {
     color: white;
 }
 
