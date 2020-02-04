@@ -6,9 +6,19 @@
     margin-bottom: 8px;
 }
 
+.nav-link:link,.nav-link:visited,.nav-link:hover {
+    color:white;
+}
+.nav-link.active {
+    background-color: rgba(0 ,47, 108, 1) !important;
+}
+
+.nav-link:link,.nav-link:visited {
+    background-color: rgba(0, 47, 108, 0.8);
+}
+
 .nav-link:hover {
-    background-color: rgba(0, 47, 108, 1) !important;
-    color: white;
+    background-color: rgba(0, 123, 255, 1) !important;
 }
 
 .short-field {
@@ -106,10 +116,7 @@ body {
     max-width: 120px;
 }
 
-.return-link:link {
-    color: white;
-}
-.return-link:visited {
+.return-link:link,.return-link:visited  {
     color: white;
 }
 
